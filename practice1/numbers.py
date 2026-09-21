@@ -33,6 +33,9 @@ print(type(z))"""
 import random
 print(random.randrange(1,10))
 
+import random
+print(random.randrange(1,10))
+
 x=5
 y=3.14
 z=2+3j

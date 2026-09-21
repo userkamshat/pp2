@@ -1,5 +1,5 @@
 a = "Hello, World!"
-print(a[1])
+print(a[1]) #e
 for x in "banana":
   print(x)
 a = "Hello, World!"
@@ -39,9 +39,18 @@ print (txt)
 price = 59
 txt = f"The price is {price} dollars"
 print(txt)
+
+txt=f"The price is {price} dollars"
+print(txt)
+
 price = 59
 txt = f"The price is {price:.2f} dollars"
 print(txt)
+
+price=59
+txt=f"The price is {price:.2f} dollars" #59.00
+#7.02,after point 2 symb
+
 txt = f"The price is {20 * 59} dollars"
 print(txt)
 txt = "We are the so-called \"Vikings\" from the north."#\"\"
