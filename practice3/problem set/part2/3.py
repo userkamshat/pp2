@@ -1,7 +1,10 @@
-def fahrenheit_to_celsius(F):
-    return (5 / 9) * (F - 32)
+def solve(numheads, numlegs):
+    rabbits = (numlegs - 2 * numheads) // 2
+    chickens = numheads - rabbits
+    return rabbits, chickens
 
 
-F = float(input("Enter Fahrenheit: "))
+rabbits, chickens = solve(35, 94)
 
-print(fahrenheit_to_celsius(F))
+print("Rabbits:", rabbits)
+print("Chickens:", chickens)
