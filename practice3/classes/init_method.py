@@ -1,20 +1,13 @@
 class Person:
-  pass
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def greet(self):
+        print("Hello,my name is ",self.name)
 
-p1 = Person()
-p1.name = "Tobias"
-p1.age = 25
+p1=Person("John",36)
+p1.greet()
 
-print(p1.name)
-print(p1.age)
 
-class Person:
-  def __init__(self, name, age=18):
-    self.name = name
-    self.age = age
 
-p1 = Person("Emil")
-p2 = Person("Tobias", 25)
 
-print(p1.name, p1.age)
-print(p2.name, p2.age)
