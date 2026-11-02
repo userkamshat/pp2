@@ -16,6 +16,8 @@ def even_numbers(n):
             yield i
 
 
+
+
 n = int(input())
 
 print(",".join(str(x) for x in even_numbers(n)))

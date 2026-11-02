@@ -1,0 +1,6 @@
+milk
+bread
+tovar1
+tovar2
+tovar3
+cheesebanana
