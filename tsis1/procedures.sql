@@ -88,3 +88,20 @@ BEGIN
 END;
 $$;
 
+
+
+
+CREATE OR REPLACE PROCEDURE set_phone_type(
+    p_contact_name VARCHAR,
+    p_phone VARCHAR
+) 
+LANGUAGE plpgsql
+AS $$
+BEGIN
+IF p_type NOT IN('home','work','mobile')THEN
+    RAISE EXCEPTION 'Invalid phone type!';
+END IF;
+UPDATE phones
+SET type=p_type
+WHERE contact_name=p_contract_name
+    AND phone=p_phone;
